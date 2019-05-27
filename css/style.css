@@ -16,6 +16,8 @@ body {
     margin: 0;
 }
 
+/* Header */
+
 .header__top .container {
     background: #282828;
     line-height: 45px;
@@ -65,6 +67,8 @@ body {
     transform: translateY(9px) scale(1)
 }
 
+/* Main content */
+
 .main {
     padding-top: 30px;
 }
@@ -102,12 +106,78 @@ body {
     padding: 20px 30px;
     display: inline-block;
     color: whitesmoke;
-    border-radius: 5px;
+    border-radius: 3px;
     font-size: 16px;
     font-weight: 700;
     background-color: #0c71b9;
-    border-bottom: 5px solid #0a65a6;
 }
+
+/* Directions slick slider */
+
+.main__directions {
+    margin-top: 40px;
+}
+
+.main__directions .directions__block {
+    height: 205px;
+    background: #fff;
+    background-position: bottom center;
+    background-size: 75% 74%;
+    background-repeat: no-repeat;
+
+}
+
+.main__directions .directions__block h4 {
+    color: #0a65a6;
+    /* padding: 0px 30px; */
+    padding-top: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.slick-slide {
+    margin: 0 15px;
+}
+
+.slick-active {
+    outline: none;
+}
+
+/* Partners slick slider */
+
+.partners {
+    margin-top: 40px;
+}
+
+.partners__blocks {
+    margin-top: 30px;
+}
+
+.partners h2 {
+    text-align: center;
+}
+
+.partners__blocks .partner__block {
+    height: 75px;
+    background: #fff;
+    margin: 0 -10px;
+}
+
+.partners__blocks .partner__block a img {
+    margin: 0 auto;
+}
+
+.partners__blocks .partner__block a {
+    text-decoration: none;
+    outline: none;
+}
+
+.slick-prev:before, .slick-next:before  {
+    color: #282828;
+}
+
+
+/* Footer */
 
 .footer-section {
 	background: #282828;
@@ -190,10 +260,3 @@ body {
 	top: 6px;
 	background: #ffc222;
 }
-
-/* .contact-widget .con-info span {
-	float: left;
-	color: #f51167;
-	margin-right: 15px;
-	overflow: hidden;
-} */
