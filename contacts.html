@@ -38,16 +38,14 @@
                         <li><a href="#">Новости</a></li>
                         <li><a href="#">Каталог</a></li>
                         <li><a href="#">Прайс-лист</a></li>
-                        <li><a href="/contacts.html">Контакты</a></li>
+                        <li><a href="">Контакты</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
-    <!-- end header -->
 
-    <!-- content block -->
-    <div class="container main">
+    <div class="container">
         <div class="row">
             <div class="col-md-4">
                 <!-- sidebar -->
@@ -64,69 +62,86 @@
                         <li><a href="#">Услуги</a></li>
                     </ul>
                 </div>
-            </div>
-            <!-- end sidebar -->
+                <div class="container-contact100">
+                    <div class="wrap-contact100">
+                        <form class="contact100-form validate-form">
+                            <span class="contact100-form-title">
+                                Связаться с нами
+                            </span>
 
-            <!-- main content block -->
-            <div class="col-md-8">
-                <div class="main__content">
-                    <h2>ООО «АМИСОФТ»</h2>
-                    <p>
-                        Общество с ограниченной ответственностью АМИСОФТ создано в 2009 году и является эксклюзивным
-                        дистрибьютором компаний TOPCON и SOKKIA на территории Республики Беларусь. Мы представляем своим
-                        клиентом самый широкий спектр приборов, аксессуаров и материалов для геодезии, топографии,
-                        картографии, лесного хозяйства, обрудование неразрушающего контроля...
-                    </p>
-                    <a class="btn_about" href="#">Узнать больше о компании</a>
-                </div>
+                            <div class="wrap-input100 validate-input" data-validate="Name is required">
+                                <input class="input100" id="name" type="text" name="name" placeholder="Ваше имя">
+                                <label class="label-input100" for="name">
+                                    <span class="lnr lnr-user"></span>
+                                </label>
+                            </div>
 
-                <div class="main__directions">
-                    <!-- <h2>Наши направления</h2> -->
-                    <div class="directions_blocks">
-                        <div class="directions__block" style="background-image: url(img/directions/taheometer.png)">
-                            <h4>Геодезическое оборудование</h4>
-                        </div>
-                        <div class="directions__block" style="background-image: url(img/directions/georadar.png)">
-                            <h4>Георадары и трассоискатели</h4>
-                        </div>
-                        <div class="directions__block" style="background-image: url(img/directions/dalnomer.png)">
-                            <h4>Лазерные инструменты</h4>
-                        </div>
-                        <div class="directions__block" style="background-image: url(img/directions/gnss.png)">
-                            <h4>OEM GPS-модули и антенны</h4>
-                        </div>
-                        <div class="directions__block" style="background-image: url(img/directions/tripod.png)">
-                            <h4>Аксессуары</h4>
-                        </div>
-                        <div class="directions__block" style="background-image: url(img/directions/highmeter.png)">
-                            <h4>Лесотаксационное оборудование</h4>
-                        </div>
+                            <div class="wrap-input100 validate-input"
+                                data-validate="Valid email is required: ex@abc.xyz">
+                                <input class="input100" id="email" type="text" name="email" placeholder="Ваш email">
+                                <label class="label-input100" for="email">
+                                    <span class="lnr lnr-envelope"></span>
+                                </label>
+                            </div>
+
+                            <div class="wrap-input100 validate-input" data-validate="Phone is required">
+                                <input class="input100" id="phone" type="text" name="phone" placeholder="Ваш телефон">
+                                <label class="label-input100" for="phone">
+                                    <span class="lnr lnr-phone-handset"></span>
+                                </label>
+                            </div>
+
+                            <div class="wrap-input100 validate-input" data-validate="Message is required">
+                                <textarea class="input100" name="message" placeholder="Ваше сообщение..."></textarea>
+                            </div>
+
+                            <div class="container-contact100-form-btn">
+                                <div class="wrap-contact100-form-btn">
+                                    <button class="contact100-form-btn">
+                                        Отправить
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-            <!-- end main content block -->
-        </div>
-        <div class="partners">
-            <h2>Наши партнеры</h2>
-            <div class="partners__blocks">
-                <div class="partner__block"><a href="#"><img src="/img/partners/topcon.png" alt="topcon"
-                            style="padding-top: 24px"></a></div>
-                <div class="partner__block"><a href="#"><img src="/img/partners/laser.png" alt="laser"
-                            style="padding-top: 16px"></a></a></div>
-                <div class="partner__block"><a href="#"><img src="/img/partners/haglof.png" alt="haglof"
-                            style="padding-top: 16px"></a></a></div>
-                <div class="partner__block"><a href="#"><img src="/img/partners/sgs.png" alt="sgs"></a></a></div>
-                <div class="partner__block"><a href="#"><img src="/img/partners/mala.png" alt="mala"
-                            style="padding-top: 23px"></a></a></div>
-                <div class="partner__block"><a href="#"><img src="/img/partners/ditchwitch.png" alt="ditchwitch"
-                            style="padding-top: 28px"></a></a></div>
-                <div class="partner__block"><a href="#"><img src="/img/partners/satel.png" alt="satel"></a></a></div>
-                <div class="partner__block"><a href="#"><img src="/img/partners/soppec.png" alt="soppec"
-                            style="height:75px; padding: 6px"></a></a></div>
+            <div class="col-md-8 contacts">
+                <h2>Контактная информация</h2>
+                <h3>
+                    Общество с ограниченной ответственностью «АМИСОФТ»
+                </h3>
+                <p>
+                    УНП: 191135549
+                </p>
+                <h3>Адрес:</h3>
+                <p>
+                    Республика Беларусь, 220026, Минск, пр-т Партизанский, д. 95, офис 95
+                </p>
+                <h3>Телефоны:
+                </h3>
+                <p>
+                    +375 (17) 295-95-00
+                </p>
+                <p>
+                    +375 (29) 193-01-91
+                </p>
+                <p>
+                    +375 (29) 636-94-82
+                </p>
+                <h3>Факс:</h3>
+                <p>+375 (17) 295-95-00</p>
+                <h3>Электронная почта:</h3>
+                <a href="mailto: info@topcon.by ">info@topcon.by</a>
+                <a href="mailto: info@amisoft.by ">info@amisoft.by</a>
+                <a href="mailto: amisoftgeo@gmail.com ">amisoftgeo@gmail.com</a>
+                <h3>Банковские реквизиты:</h3>
+                <p>р/с: BY34UNBS30120201030090001933</p>
+                <p>в ЗАО «БСБ-Банк» РКЦ №1 220030, г. Минск, пл. Свободы, 4</p>
+                <p>код UNBSBY2X</p>
             </div>
         </div>
     </div>
-    <!-- end content block -->
 
     <!-- footer section -->
     <section class="footer-section">
@@ -172,24 +187,6 @@
         </div>
     </section>
     <!-- Footer section end -->
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="slick/slick.js"></script>
-    <script>
-        $('.directions_blocks').slick({
-            arrows: false,
-            dots: true,
-            slidesToShow: 3,
-            slidesToScroll: 1
-        });
-
-        $('.partners__blocks').slick({
-            arrows: true,
-            slidesToShow: 5,
-            slidesToScroll: 1,
-        })
-    </script>
 
 </body>
 
