@@ -190,9 +190,6 @@ body {
 
 /* Contacts block */
 
-
-
-
 /*---------------------------------------------*/
 input {
 	outline: none;
@@ -280,7 +277,7 @@ button:hover {
 .contact100-form-title {
   display: block;
   font-size: 30px;
-  color: #43383e;
+  color: #282828;
   line-height: 1.2;
   text-align: left;
   padding-bottom: 10px
@@ -385,6 +382,132 @@ textarea.input100 {
 .contacts h3 {
     padding-top: 21px;
 }
+
+/* News block */
+
+.news-block {
+    padding-top: 20px;
+}
+
+.news-block a {
+    text-decoration: underline;
+    color: #ffc222;
+}
+
+.other-news {
+    min-height: auto;
+    background: #fff;
+
+}
+
+.other-news a {
+    color: #282828;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+.other-news a:hover {
+    color: #ffc222;
+}
+
+/* products page */
+
+.product-item {
+    text-align: center;
+}
+
+.product-item img {
+    height: 200px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.product-item img:hover {
+    transition: ease-in-out .5s;
+    transform: scale(1.04);
+}
+
+.product-preview {
+    margin-top: -9px;
+}
+
+.product-preview img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.product-item a {
+    padding: 10px;
+    color: black;
+}
+
+.product-item a::after{
+    content: '';
+    width: 90%;
+    margin: 0 auto;
+    height: 2px;
+    display: block;
+    background: black;
+    transform:  scale(0);
+    transition: all 0.2s;
+}
+
+.product-item a:hover::after {
+    transform: scale(1)
+}
+
+.main__category-descr {
+    margin-top: 50px;
+    padding-left: 10px;
+}
+
+/* [ Accordion ] */
+
+.main__accordion-block {
+    margin-top: 15px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
 
 /* Footer */
 
