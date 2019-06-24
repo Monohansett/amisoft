@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="css/slicknav.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -34,7 +36,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-auto">
+                <div class="col-md-auto ">
                     <ul class="header__nav-menu">
                         <li><a href="/about.html">О компании</a></li>
                         <li><a href="/news.html">Новости</a></li>
@@ -44,6 +46,7 @@
                     </ul>
                 </div>
             </div>
+            <div class="row main__navbar"></div>
         </div>
     </header>
     <!-- end header -->
@@ -85,7 +88,8 @@
                 <div class="main__directions">
                     <!-- <h2>Наши направления</h2> -->
                     <div class="directions_blocks">
-                        <div class="directions__block" style="background-image: url(img/Fantastic-Full-HD-Wallpaper.jpg)">
+                        <div class="directions__block"
+                            style="background-image: url(img/Fantastic-Full-HD-Wallpaper.jpg)">
                             <h4>Геодезическое оборудование</h4>
                         </div>
                         <div class="directions__block" style="background-image: url(img/directions/georadar.png)">
@@ -178,6 +182,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="slick/slick.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
     <script src="/js/adaptive.js"></script>
     <script>
         $('.directions_blocks').slick({
@@ -193,7 +198,13 @@
             arrows: true,
             slidesToShow: 5,
             slidesToScroll: 1,
-        })
+        });
+
+        $('.header__nav-menu').slicknav({
+            prependTo: '.main__navbar',
+            closedSymbol: '<i class="flaticon-right-arrow"></i>',
+            openedSymbol: '<i class="flaticon-down-arrow"></i>'
+        });
     </script>
 
 </body>
